@@ -3,3 +3,17 @@
 
 # Packaging
 .cask
+
+# Emacs droppings
+*~
+\#*\#
+
+# Autosave sessions
+session.*
+
+# Package and desktop folders
+desktop
+emacs.desktop.tmp
+package
+tramp
+elpa
