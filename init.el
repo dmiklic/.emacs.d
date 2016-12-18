@@ -119,12 +119,16 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
-(require 'dumb-jump)
-;(use-package dumb-jump
-;             :bind (("M-g o" . dumb-jump-go-other-window)
-;                    ("M-g j" . dumb-jump-go))
-;             :config (setq dumb-jump-selector 'ivy)
-;             :ensure)
+;; Configure the dumb-jump package
+;; It's useful for switching between definition/declaration etc.
+;; More info: https://github.com/jacktasia/dumb-jump
+(use-package dumb-jump
+             :bind (("M-g o" . dumb-jump-go-other-window)
+                    ("M-g j" . dumb-jump-go)
+                    ("M-g b" . dumb-jump-back)
+                    ("M-g q" . dumb-jump-quick-look))
+             :config (setq dumb-jump-selector 'ivy)
+             :ensure)
 
 ;; Should be at the end of init.el according to workgroups2 manual
 ;; Load workgroups package for improved management of windows
