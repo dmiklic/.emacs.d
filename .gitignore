@@ -13,7 +13,11 @@ session.*
 
 # Package and desktop folders
 desktop
+.emacs.desktop
+.emacs.desktop.lock
+network-security.data
 emacs.desktop.tmp
+.emacs_workgroups
 package
 tramp
 elpa

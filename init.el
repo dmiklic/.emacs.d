@@ -120,6 +120,7 @@
 ;; Configure the dumb-jump package
 ;; It's useful for switching between definition/declaration etc.
 ;; More info: https://github.com/jacktasia/dumb-jump
+(require 'use-package)
 (use-package dumb-jump
              :bind (("M-g o" . dumb-jump-go-other-window)
                     ("M-g j" . dumb-jump-go)
@@ -136,3 +137,6 @@
 
 ;; Should be at the very end of init.el (?)
 (workgroups-mode 1)
+
+;; Start the Emacs server to edit files in running instance
+(server-start)
