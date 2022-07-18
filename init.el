@@ -49,9 +49,8 @@
 ;;(global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ;; Enable package managers
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
 
 ;; Customize major modes
 (global-linum-mode t)    ;; Show line numbers in all modes
